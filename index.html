@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>PurrPal - Home</title>
+    <link rel="stylesheet" href="styles.css"/>
+  </head>
+  <body>
+    <!-- Nav Bar -->
+    <header>
+      <div class="logo">
+        <a href="index.html">
+          <img src="logo.png" alt="Cat Image"/>
+          <h1>PurrPal</h1>
+        </a>
+      </div>
+      <div class="nav-container">
+        <nav>
+          <a href="index.html" class="active">Public Forum</a>
+          <a href="cat-health.html">Cat Health</a>
+          <a href="list.html">Cat Profiles</a>
+          <div style="display: flex; flex-direction: column; float: right">
+            <a href="settings.html">Settings</a>
+            <a href="homeLogOut.html" class="logout">Log Out</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Sidebar -->
+    <div class="container">
+      <aside>
+        <button class="filter active">Popular</button>
+        <button class="filter">Newest</button>
+        <a href="createPost.html" class="filter-link">
+          <button class="filter">Create Post</button>
+        </a>
+      </aside>
+
+      <!-- Content -->
+      <main>
+        <!-- Search for Posts -->
+        <div class="search-bar">
+          <!-- Search Form in Header -->
+          <form action="search.html" method="GET" class="search-bar" style="display: flex;">
+            <input type="text" name="query" placeholder="Search for cat topics..."/>
+            <button type="submit" class="search-btn">🔍</button>
+          </form>
+        </div>
+
+        <!-- View Post Previews -->
+        <section class="post">
+          <div class="vote">
+            <button>🔼</button>
+            <span>175</span>
+            <button>🔽</button>
+          </div>
+          <div class="post-content">
+            <h2>How to train a kitten to use a litter box?</h2>
+            <p>
+              Hi fellow cat lovers! I just adopted my first ever kitten. She is
+              spayed and is only 3 months old. She does not use her litter box.
+              She tends to pee on the carpet once a day and poops in our plants.
+              I have no idea what to do. How can I go about solving this? Thanks
+              in advance!
+            </p>
+          </div>
+        </section>
+
+        <section class="post">
+          <div class="vote">
+            <button>🔼</button>
+            <span>67</span>
+            <button>🔽</button>
+          </div>
+          <div class="post-content">
+            <h2>How to introduce two cats?</h2>
+            <p>
+              Good morning!! Today I am headed to my local animal shelter to
+              adopt Tina, a 3 year old tortie! I have a 5 year old girl named
+              Char and she has seemed so lonely recently, so I am getting her a
+              friend. They are both spayed and on the smaller side. How should I
+              go about introducing them? I watched Jackson Galaxy videos, but
+              what are you all's expert tips? I will keep you guys updated?
+            </p>
+          </div>
+        </section>
+
+        <section class="post">
+          <div class="vote">
+            <button>🔼</button>
+            <span>23</span>
+            <button>🔽</button>
+          </div>
+          <div class="post-content">
+            <h2>What food is best to feed a kitten?</h2>
+            <p>
+              I have a 5 month old male cat that refuses to drink water. I don't
+              want him to develop a kidney infection. What is the best food for
+              kittens to avoid kidney issues? I am so stressed
+            </p>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <div>
+        <a href="#">Home</a> | <a href="#">About</a> | <a href="#">Privacy</a> |
+        <a href="#">FAQ </a>
+      </div>
+      <div>Copyright 2025 PurrPal</div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="search.js"></script>
+
+  </body>
+</html>
